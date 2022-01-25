@@ -103,7 +103,6 @@ export default class EventCalendar extends Component {
           <ViewsDirective>
             <ViewDirective
               option="Day"
-              // interval={3}
               startHour="03:00"
               endHour="18:00"
             ></ViewDirective>

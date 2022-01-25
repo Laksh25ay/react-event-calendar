@@ -15,6 +15,8 @@ import {
   Resize,
 } from "@syncfusion/ej2-react-schedule";
 
+let newData = [];
+
 let data = [
   {
     Id: 1,
@@ -71,10 +73,9 @@ export default class EventCalendar extends Component {
       Subject: event.Subject,
       StartTime: event.StartTime,
       EndTime: event.EndTime,
-      isAllDay: event.isAllDay,
+      IsAllDay: event.IsAllDay,
     };
-    data.filter((data) => data.Id !== event.Id).push(newEvent);
-    console.log(this.data);
+    console.log(newEvent);
   }
 
   render() {
